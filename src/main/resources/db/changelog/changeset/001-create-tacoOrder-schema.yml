@@ -1,0 +1,60 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: evgen
+      changes:
+        - createTable:
+            tableName: Taco_Order
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: delivery_name
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: delivery_street
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: delivery_city
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: delivery_state
+                  type: varchar(2)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: delivery_zip
+                  type: varchar(10)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: cc_number
+                  type: varchar(16)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: cc_expiration
+                  type: varchar(5)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: cc_cvv
+                  type: varchar(3)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: placed_at
+                  type: timestamp
+                  constraints:
+                    nullable: false

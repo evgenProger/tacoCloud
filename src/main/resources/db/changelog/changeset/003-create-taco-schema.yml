@@ -1,0 +1,45 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: evgen
+      changes:
+        - createTable:
+            tableName: Taco
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: taco_order
+                  type: bigint
+                  constraints:
+                    nullable: false
+              - column:
+                  name: taco_order_key
+                  type: bigint
+                  constraints:
+                    nullable: false
+              - column:
+                  name: created_at
+                  type: timestamp
+                  constraints:
+                    nullable: false
+  - changeSet:
+      id: 2
+      author: evgen
+      changes:
+        - addForeignKeyConstraint:
+            baseTableName: Taco
+            baseColumnNames: taco_order
+            referencedTableName: Taco_Order
+            referencedColumnNames: id
+            constraintName: fk_taco_taco_order

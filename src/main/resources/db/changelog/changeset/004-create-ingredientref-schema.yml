@@ -1,0 +1,34 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: evgen
+      changes:
+        - createTable:
+            tableName: Ingredient_Ref
+            columns:
+              - column:
+                  name: ingredient
+                  type: varchar(4)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: taco
+                  type: bigint
+                  constraints:
+                    nullable: false
+              - column:
+                  name: taco_key
+                  type: bigint
+                  constraints:
+                    nullable: false
+
+  - changeSet:
+      id: 2
+      author: evgen
+      changes:
+        - addForeignKeyConstraint:
+            baseTableName: Ingredient_Ref
+            baseColumnNames: ingredient
+            referencedTableName: Ingredient
+            referencedColumnNames: id
+            constraintName: fk_ingredientref_ingredient
