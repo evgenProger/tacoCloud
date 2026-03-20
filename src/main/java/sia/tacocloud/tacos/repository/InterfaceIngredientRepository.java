@@ -5,7 +5,7 @@ import sia.tacocloud.tacos.model.Ingredient;
 import java.util.List;
 import java.util.Optional;
 
-public interface IngredientRepository {
+public interface InterfaceIngredientRepository {
 
     List<Ingredient> findAll();
     Optional<Ingredient> findById(String id);

@@ -5,15 +5,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 import sia.tacocloud.tacos.model.Ingredient;
-import sia.tacocloud.tacos.repository.IngredientRepository;
+import sia.tacocloud.tacos.repository.InterfaceIngredientRepository;
 
 @Component
 public class IngredientByIdConverter implements Converter<String, Ingredient> {
 
-    private final IngredientRepository ingredientRepo;
+    private final InterfaceIngredientRepository ingredientRepo;
 
     @Autowired
-    public IngredientByIdConverter(IngredientRepository ingredientRepo) {
+    public IngredientByIdConverter(InterfaceIngredientRepository ingredientRepo) {
         this.ingredientRepo = ingredientRepo;
     }
 

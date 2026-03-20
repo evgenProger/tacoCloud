@@ -8,14 +8,13 @@ import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 import sia.tacocloud.tacos.model.Ingredient;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
 import sia.tacocloud.tacos.model.Ingredient.Type;
 import sia.tacocloud.tacos.model.Taco;
 import sia.tacocloud.tacos.model.TacoOrder;
-import sia.tacocloud.tacos.repository.IngredientRepository;
+import sia.tacocloud.tacos.repository.InterfaceIngredientRepository;
 
 @Slf4j
 @Controller
@@ -23,9 +22,9 @@ import sia.tacocloud.tacos.repository.IngredientRepository;
 @SessionAttributes("tacoOrder")
 public class DesignTacoController {
 
-    private final IngredientRepository ingredientRepo;
+    private final InterfaceIngredientRepository ingredientRepo;
 
-    public DesignTacoController(IngredientRepository ingredientRepo) {
+    public DesignTacoController(InterfaceIngredientRepository ingredientRepo) {
         this.ingredientRepo = ingredientRepo;
     }
 
