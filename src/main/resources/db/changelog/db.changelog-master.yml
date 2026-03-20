@@ -7,3 +7,5 @@ databaseChangeLog:
       {file: db/changelog/changeset/003-create-taco-schema.yml}
   - include:
       {file: db/changelog/changeset/004-create-ingredientref-schema.yml}
+  - include:
+      {file: db/changelog/changeset/005-load-ingredients.yml}
