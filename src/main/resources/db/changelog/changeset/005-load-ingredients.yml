@@ -4,7 +4,7 @@ databaseChangeLog:
       author: evgen
       changes:
         - insert:
-            tableName: Ingredient
+            tableName: ingredient
             columns:
               - column:
                   name: id
@@ -16,7 +16,7 @@ databaseChangeLog:
                   name: type
                   value: WRAP
         - insert:
-            tableName: Ingredient
+            tableName: ingredient
             columns:
               - column:
                   name: id
@@ -28,7 +28,7 @@ databaseChangeLog:
                   name: type
                   value: WRAP
         - insert:
-            tableName: Ingredient
+            tableName: ingredient
             columns:
               - column:
                   name: id
@@ -40,7 +40,7 @@ databaseChangeLog:
                   name: type
                   value: PROTEIN
         - insert:
-            tableName: Ingredient
+            tableName: ingredient
             columns:
               - column:
                   name: id
@@ -52,7 +52,7 @@ databaseChangeLog:
                   name: type
                   value: PROTEIN
         - insert:
-            tableName: Ingredient
+            tableName: ingredient
             columns:
               - column:
                   name: id
@@ -62,9 +62,9 @@ databaseChangeLog:
                   value: Diced Tomatoes
               - column:
                   name: type
-                  value: Veggies
+                  value: VEGGIES
         - insert:
-            tableName: Ingredient
+            tableName: ingredient
             columns:
               - column:
                   name: id
@@ -74,9 +74,9 @@ databaseChangeLog:
                   value: Lettuce
               - column:
                   name: type
-                  value: Veggies
+                  value: VEGGIES
         - insert:
-            tableName: Ingredient
+            tableName: ingredient
             columns:
               - column:
                   name: id
@@ -86,9 +86,9 @@ databaseChangeLog:
                   value: Cheddar
               - column:
                   name: type
-                  value: Cheese
+                  value: CHEESE
         - insert:
-            tableName: Ingredient
+            tableName: ingredient
             columns:
               - column:
                   name: id
@@ -98,9 +98,9 @@ databaseChangeLog:
                   value: Monterrey Jack
               - column:
                   name: type
-                  value: Cheese
+                  value: CHEESE
         - insert:
-            tableName: Ingredient
+            tableName: ingredient
             columns:
               - column:
                   name: id
@@ -110,9 +110,9 @@ databaseChangeLog:
                   value: Salsa
               - column:
                   name: type
-                  value: Sauce
+                  value: SAUCE
         - insert:
-            tableName: Ingredient
+            tableName: ingredient
             columns:
               - column:
                   name: id
@@ -122,4 +122,4 @@ databaseChangeLog:
                   value: Sour Cream
               - column:
                   name: type
-                  value: Sauce
+                  value: SAUCE

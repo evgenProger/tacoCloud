@@ -4,7 +4,7 @@ databaseChangeLog:
       author: evgen
       changes:
         - createTable:
-            tableName: Ingredient
+            tableName: ingredient
             columns:
               - column:
                   name: id

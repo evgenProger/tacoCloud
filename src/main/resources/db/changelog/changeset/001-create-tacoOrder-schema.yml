@@ -4,7 +4,7 @@ databaseChangeLog:
       author: evgen
       changes:
         - createTable:
-            tableName: Taco_Order
+            tableName: taco_order
             columns:
               - column:
                   name: id

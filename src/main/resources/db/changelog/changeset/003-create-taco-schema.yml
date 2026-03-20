@@ -4,7 +4,7 @@ databaseChangeLog:
       author: evgen
       changes:
         - createTable:
-            tableName: Taco
+            tableName: taco
             columns:
               - column:
                   name: id
@@ -38,8 +38,8 @@ databaseChangeLog:
       author: evgen
       changes:
         - addForeignKeyConstraint:
-            baseTableName: Taco
+            baseTableName: taco
             baseColumnNames: taco_order
-            referencedTableName: Taco_Order
+            referencedTableName: taco_order
             referencedColumnNames: id
             constraintName: fk_taco_taco_order
